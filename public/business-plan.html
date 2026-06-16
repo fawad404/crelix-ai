@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crelix AI — Business Plan 2026</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;font-size:11pt;color:#1a1a2e;background:#eee}
+.page{width:8.5in;min-height:11in;margin:20px auto;padding:.9in 1in .8in 1in;background:#fff;position:relative;box-shadow:0 4px 20px rgba(0,0,0,.12)}
+.cover-page{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:11in;padding:1in;background:linear-gradient(160deg,#f8f6ff 0%,#fff 60%,#fff5fb 100%)}
+.cover-circle{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,#6e3dff,#ff4fcb);margin:0 auto 18px;display:flex;align-items:center;justify-content:center;font-size:36pt;font-weight:700;color:#fff}
+.cover-brand{font-size:36pt;font-weight:700;color:#6e3dff;letter-spacing:-1.5px}
+.cover-brand span{color:#ff4fcb}
+.cover-tag{font-size:13pt;color:#666;margin-top:6px}
+.cover-rule{width:70px;height:3px;background:linear-gradient(90deg,#6e3dff,#ff4fcb);margin:30px auto;border-radius:2px}
+.cover-title{font-size:22pt;font-weight:700;color:#1a1a2e;margin-bottom:8px}
+.cover-sub{font-size:12pt;color:#555;margin-bottom:36px}
+.cover-meta{font-size:11pt;color:#666;line-height:2.2}
+.cover-date{margin-top:36px;font-size:11pt;color:#999}
+.cover-nda{margin-top:50px;padding:14px 28px;border:1px solid #d9ccff;border-radius:8px;font-size:9pt;color:#888;background:rgba(110,61,255,.03);max-width:480px}
+
+.ph{display:flex;align-items:center;justify-content:space-between;border-bottom:2px solid #6e3dff;padding-bottom:10px;margin-bottom:28px}
+.ph-logo{display:flex;align-items:center;gap:8px}
+.ph-dot{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#6e3dff,#ff4fcb)}
+.ph-name{font-size:15pt;font-weight:700;color:#6e3dff}
+.ph-doc{font-size:8.5pt;color:#888}
+.pf{position:absolute;bottom:.35in;left:1in;right:1in;display:flex;justify-content:space-between;align-items:center;border-top:1px solid #e8e4f8;padding-top:6px;font-size:8pt;color:#aaa}
+
+h1{font-size:15pt;font-weight:700;color:#6e3dff;margin-bottom:14px;padding-bottom:6px;border-bottom:2px solid #6e3dff}
+h2{font-size:12.5pt;font-weight:700;color:#1a1a2e;margin-top:22px;margin-bottom:8px}
+h3{font-size:11pt;font-weight:600;color:#333;margin-top:14px;margin-bottom:6px}
+h4{font-size:10pt;font-weight:700;color:#6e3dff;margin-top:11px;margin-bottom:5px}
+p{line-height:1.72;margin-bottom:10px;color:#333}
+ul{margin-left:18px;margin-bottom:10px}
+ul li{line-height:1.7;color:#333;margin-bottom:3px}
+ol{margin-left:18px;margin-bottom:10px}
+ol li{line-height:1.7;color:#333;margin-bottom:3px}
+
+.toc-major{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1.5px solid #ddd;font-weight:700;color:#6e3dff;font-size:11.5pt;margin-top:10px}
+.toc-item{display:flex;justify-content:space-between;padding:3px 0;border-bottom:1px dotted #e0e0e0;margin-left:16px;font-size:10.5pt}
+.toc-sub{display:flex;justify-content:space-between;padding:2px 0;border-bottom:1px dotted #ebebeb;margin-left:34px;font-size:9.5pt;color:#555}
+.toc-pg{min-width:24px;text-align:right;color:#888}
+
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:10pt}
+th{background:#6e3dff;color:#fff;padding:8px 10px;text-align:left;font-weight:600;font-size:9.5pt}
+td{padding:7px 10px;border-bottom:1px solid #f0eeff}
+tr:nth-child(even) td{background:#faf8ff}
+.tr-total td{background:#ede8ff;font-weight:700;color:#6e3dff}
+.tr-sub td{background:#f9f7ff;font-style:italic;color:#666;font-size:9.5pt}
+
+.swot{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px 0}
+.sw{padding:12px 14px;border-radius:6px}
+.sw-s{background:#f0ecff;border-left:4px solid #6e3dff}
+.sw-w{background:#fff3fb;border-left:4px solid #ff4fcb}
+.sw-o{background:#f0fbf4;border-left:4px solid #22c55e}
+.sw-t{background:#fff8f0;border-left:4px solid #f97316}
+.sw-title{font-weight:700;font-size:10pt;margin-bottom:7px}
+.sw-s .sw-title{color:#6e3dff}.sw-w .sw-title{color:#c026a4}.sw-o .sw-title{color:#16a34a}.sw-t .sw-title{color:#ea580c}
+.sw ul{margin-left:14px}.sw ul li{font-size:9.5pt;margin-bottom:2px}
+
+.hl{background:#f5f2ff;border-left:4px solid #6e3dff;padding:12px 16px;margin:14px 0;border-radius:0 6px 6px 0}
+.hl p{margin:0;font-style:italic;color:#444;font-size:10.5pt}
+
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.mc{background:#faf8ff;border:1px solid #ddd6ff;border-radius:8px;padding:14px;text-align:center}
+.mv{font-size:18pt;font-weight:700;color:#6e3dff}
+.ml{font-size:8.5pt;color:#888;margin-top:3px}
+
+.sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;margin-top:70px}
+.sig-line{border-bottom:1px solid #333;margin-bottom:5px;padding-bottom:0;height:28px}
+.sig-label{font-size:9pt;color:#666}
+
+.pb{page-break-before:always}
+
+@media print{
+  body{background:#fff}
+  .page{width:auto;margin:0;box-shadow:none;page-break-after:always}
+  .print-btn{display:none}
+  @page{size:letter;margin:.65in .75in}
+}
+.print-btn{position:fixed;bottom:28px;right:28px;background:linear-gradient(135deg,#6e3dff,#ff4fcb);color:#fff;border:none;padding:13px 26px;border-radius:50px;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 18px rgba(110,61,255,.4);z-index:999}
+</style>
+</head>
+<body>
+<button class="print-btn" onclick="window.print()">🖨&nbsp; Save as PDF</button>
+
+<!-- ═══════════════════ COVER PAGE ═══════════════════ -->
+<div class="page cover-page">
+  <div class="cover-circle">C</div>
+  <div class="cover-brand">Crelix<span>AI</span></div>
+  <div class="cover-tag">AI Marketing Intelligence Platform</div>
+  <div class="cover-rule"></div>
+  <div class="cover-title">Business Plan 2026</div>
+  <div class="cover-sub">AI-Powered Marketing Intelligence &amp; Creative Generation</div>
+  <div class="cover-meta">
+    Crelix AI Inc.<br>
+    Remote-First · Global Operations<br>
+    crelix.ai
+  </div>
+  <div class="cover-date">Prepared: June 2026</div>
+  <div class="cover-nda">
+    CONFIDENTIAL — This document contains proprietary and sensitive business information. It is intended solely for the named recipient and may not be reproduced or distributed without the express written consent of Crelix AI.
+  </div>
+</div>
+
+<!-- ═══════════════════ NDA PAGE ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <div style="margin-top:50px">
+    <h2>Non-Disclosure and Confidentiality Agreement</h2>
+    <p>The undersigned ("Recipient") hereby agrees that all financial and other information ("Information") that it has and will receive concerning Crelix AI is confidential and will not be disclosed to any other individual or entity without prior written consent of Crelix AI.</p>
+    <p>The Information shall remain the property of Crelix AI and shall be returned to Crelix AI promptly at its request together with all copies made thereof.</p>
+    <p>Recipient acknowledges that no remedy of law may be adequate to compensate Crelix AI for a violation of this Agreement. Recipient hereby agrees that in addition to any other legal or other rights that may be available in the event of a breach hereunder, Crelix AI may seek equitable relief to enforce this agreement in any court of competent jurisdiction.</p>
+    <p>This Agreement is binding upon the Recipient and its directors, officers, employees, agents, and advisors who are granted access to the Information. The Information shall be used solely for the purpose of evaluating a potential business relationship with Crelix AI and for no other purpose.</p>
+  </div>
+
+  <div class="sig-grid">
+    <div><div class="sig-line"></div><div class="sig-label">Date</div></div>
+    <div><div class="sig-line"></div><div class="sig-label">Signature of Recipient</div></div>
+  </div>
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>2</span></div>
+</div>
+
+<!-- ═══════════════════ TABLE OF CONTENTS ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h1 style="text-align:center;border:none;margin-bottom:28px">Table of Contents</h1>
+
+  <div class="toc-major"><span>1.0 &nbsp;Executive Summary</span><span class="toc-pg">5</span></div>
+  <div class="toc-item"><span>1.1 &nbsp;Business Objectives</span><span class="toc-pg">5</span></div>
+  <div class="toc-item"><span>1.2 &nbsp;Mission Statement</span><span class="toc-pg">5</span></div>
+  <div class="toc-item"><span>1.3 &nbsp;Guiding Principles</span><span class="toc-pg">6</span></div>
+  <div class="toc-item"><span>1.4 &nbsp;Keys to Success</span><span class="toc-pg">6</span></div>
+
+  <div class="toc-major"><span>2.0 &nbsp;Company Description</span><span class="toc-pg">6</span></div>
+  <div class="toc-item"><span>2.1 &nbsp;Ownership</span><span class="toc-pg">6</span></div>
+  <div class="toc-item"><span>2.2 &nbsp;Legal Form</span><span class="toc-pg">7</span></div>
+  <div class="toc-item"><span>2.3 &nbsp;Start-Up Summary</span><span class="toc-pg">7</span></div>
+  <div class="toc-item"><span>2.4 &nbsp;Location and Facilities</span><span class="toc-pg">7</span></div>
+
+  <div class="toc-major"><span>3.0 &nbsp;Products &amp; Services</span><span class="toc-pg">7</span></div>
+  <div class="toc-item"><span>3.1 &nbsp;Products/Services Descriptions</span><span class="toc-pg">7</span></div>
+  <div class="toc-item"><span>3.2 &nbsp;Competitive Comparison</span><span class="toc-pg">8</span></div>
+  <div class="toc-item"><span>3.3 &nbsp;Product/Service Sourcing</span><span class="toc-pg">9</span></div>
+  <div class="toc-item"><span>3.4 &nbsp;Technology Infrastructure</span><span class="toc-pg">9</span></div>
+  <div class="toc-item"><span>3.5 &nbsp;Service Delivery</span><span class="toc-pg">9</span></div>
+  <div class="toc-item"><span>3.6 &nbsp;Future Product Roadmap</span><span class="toc-pg">10</span></div>
+
+  <div class="toc-major"><span>4.0 &nbsp;Market Analysis</span><span class="toc-pg">10</span></div>
+  <div class="toc-item"><span>4.1 &nbsp;Industry Analysis</span><span class="toc-pg">10</span></div>
+  <div class="toc-sub"><span>4.1.1 &nbsp;Market Size</span><span class="toc-pg">11</span></div>
+  <div class="toc-sub"><span>4.1.2 &nbsp;Industry Participants</span><span class="toc-pg">11</span></div>
+  <div class="toc-sub"><span>4.1.3 &nbsp;Main Competitors</span><span class="toc-pg">11</span></div>
+  <div class="toc-sub"><span>4.1.4 &nbsp;Market Segments</span><span class="toc-pg">12</span></div>
+  <div class="toc-item"><span>4.2 &nbsp;Market Tests</span><span class="toc-pg">12</span></div>
+  <div class="toc-item"><span>4.3 &nbsp;Target Market Segment Strategy</span><span class="toc-pg">12</span></div>
+  <div class="toc-sub"><span>4.3.1 &nbsp;Market Needs</span><span class="toc-pg">12</span></div>
+  <div class="toc-sub"><span>4.3.2 &nbsp;Market Trends</span><span class="toc-pg">13</span></div>
+  <div class="toc-sub"><span>4.3.3 &nbsp;Market Growth</span><span class="toc-pg">13</span></div>
+  <div class="toc-item"><span>4.4 &nbsp;Positioning</span><span class="toc-pg">13</span></div>
+
+  <div class="toc-major"><span>5.0 &nbsp;Marketing Strategy and Implementation</span><span class="toc-pg">14</span></div>
+  <div class="toc-item"><span>5.1 &nbsp;SWOT Analysis</span><span class="toc-pg">14</span></div>
+  <div class="toc-item"><span>5.2 &nbsp;Strategy Pyramid</span><span class="toc-pg">15</span></div>
+  <div class="toc-item"><span>5.3 &nbsp;Unique Selling Proposition (USP)</span><span class="toc-pg">15</span></div>
+  <div class="toc-item"><span>5.4 &nbsp;Competitive Edge</span><span class="toc-pg">15</span></div>
+  <div class="toc-item"><span>5.5 &nbsp;Marketing Strategy and Positioning</span><span class="toc-pg">15</span></div>
+  <div class="toc-sub"><span>5.5.1 &nbsp;Positioning Statement</span><span class="toc-pg">15</span></div>
+  <div class="toc-sub"><span>5.5.2 &nbsp;Pricing Strategy</span><span class="toc-pg">16</span></div>
+  <div class="toc-sub"><span>5.5.3 &nbsp;Promotion and Advertising Strategy</span><span class="toc-pg">16</span></div>
+  <div class="toc-sub"><span>5.5.4 &nbsp;Website</span><span class="toc-pg">16</span></div>
+  <div class="toc-sub"><span>5.5.5 &nbsp;Marketing Programs</span><span class="toc-pg">16</span></div>
+  <div class="toc-item"><span>5.6 &nbsp;Sales Strategy</span><span class="toc-pg">17</span></div>
+  <div class="toc-sub"><span>5.6.1 &nbsp;Sales Forecast</span><span class="toc-pg">17</span></div>
+  <div class="toc-sub"><span>5.6.2 &nbsp;Sales Programs</span><span class="toc-pg">17</span></div>
+  <div class="toc-item"><span>5.7 &nbsp;Legal</span><span class="toc-pg">17</span></div>
+  <div class="toc-item"><span>5.8 &nbsp;Milestones</span><span class="toc-pg">18</span></div>
+  <div class="toc-item"><span>5.9 &nbsp;Exit Strategy</span><span class="toc-pg">18</span></div>
+
+  <div class="toc-major"><span>6.0 &nbsp;Organization and Management</span><span class="toc-pg">18</span></div>
+  <div class="toc-item"><span>6.1 &nbsp;Organizational Structure</span><span class="toc-pg">18</span></div>
+  <div class="toc-item"><span>6.2 &nbsp;Management Team</span><span class="toc-pg">18</span></div>
+  <div class="toc-item"><span>6.3 &nbsp;Management Team Gaps</span><span class="toc-pg">19</span></div>
+  <div class="toc-item"><span>6.4 &nbsp;Personnel Plan</span><span class="toc-pg">19</span></div>
+  <div class="toc-item"><span>6.5 &nbsp;Board of Advisors</span><span class="toc-pg">19</span></div>
+
+  <div class="toc-major"><span>7.0 &nbsp;Financial Plan</span><span class="toc-pg">19</span></div>
+  <div class="toc-item"><span>7.1 &nbsp;Important Assumptions</span><span class="toc-pg">19</span></div>
+  <div class="toc-item"><span>7.2 &nbsp;Start-Up Costs</span><span class="toc-pg">20</span></div>
+  <div class="toc-item"><span>7.3 &nbsp;Source and Use of Funds</span><span class="toc-pg">20</span></div>
+  <div class="toc-item"><span>7.4 &nbsp;Break-Even Analysis</span><span class="toc-pg">20</span></div>
+  <div class="toc-item"><span>7.5 &nbsp;Projections</span><span class="toc-pg">21</span></div>
+  <div class="toc-sub"><span>7.5.1 &nbsp;Projected Profit and Loss</span><span class="toc-pg">21</span></div>
+  <div class="toc-sub"><span>7.5.2 &nbsp;Projected Cash Flow</span><span class="toc-pg">22</span></div>
+  <div class="toc-sub"><span>7.5.3 &nbsp;Projected Balance Sheet</span><span class="toc-pg">22</span></div>
+  <div class="toc-item"><span>7.6 &nbsp;Business Ratios</span><span class="toc-pg">23</span></div>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>3</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 5 — EXECUTIVE SUMMARY ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h1>1.0 Executive Summary</h1>
+
+  <p>Every business that runs paid advertising faces the same expensive problem: generating ad creatives that actually convert requires deep customer research, strategic copywriting, and skilled design — a process that typically takes days and costs thousands of dollars per campaign. <strong>Crelix AI</strong> ("Crelix") solves this entirely. Crelix is an AI Marketing Intelligence Platform that analyzes any business URL, builds a deep understanding of its customers and market, and automatically generates high-converting ad creatives with professional copy — in under three minutes.</p>
+
+  <p>Unlike generic AI image or copy tools, Crelix deploys a proprietary dual-AI pipeline: Grok AI conducts real-time business and customer research (ICP, pain points, buying triggers, competitive landscape), and Claude AI synthesizes this into a structured Marketing Brain — a strategic intelligence layer that powers all creative output. The result is not generic content; it is precisely targeted, psychologically informed advertising built for the specific business and customer.</p>
+
+  <p>Crelix was founded to shift the competitive advantage in digital advertising from large brands with large agency budgets to any business owner, marketer, or agency team in the world. The platform currently serves three core workflows: Marketing Brain analysis, AI creative generation (images + copy), and campaign strategy. A campaign builder, brand memory, and customer voice engine are in active development.</p>
+
+  <div class="metrics">
+    <div class="mc"><div class="mv">$740B</div><div class="ml">Global Digital Ad Market (2024)</div></div>
+    <div class="mc"><div class="mv">$107B</div><div class="ml">AI in Marketing by 2028</div></div>
+    <div class="mc"><div class="mv">3 min</div><div class="ml">Full Campaign Intelligence + Creatives</div></div>
+  </div>
+
+  <p>The purpose of this business plan is to outline Crelix AI's strategy to capture a meaningful share of the AI marketing tools market, grow its annual recurring revenue by 200%+ year-over-year across the first three years, and establish itself as the definitive intelligence layer between a business and its advertising output.</p>
+
+  <h2>1.1 Business Objectives</h2>
+  <p>The primary objectives of Crelix AI are:</p>
+  <ol>
+    <li><strong>Product Leadership:</strong> Build and maintain the most comprehensive AI marketing intelligence system available to SMBs and agencies — delivering not just creative assets but the strategic reasoning behind them, so every customer understands <em>why</em> an ad will work, not just what it looks like.</li>
+    <li><strong>Recurring Revenue Growth:</strong> Achieve $500K ARR by end of Year 1, $2M ARR by end of Year 2, and $6M ARR by end of Year 3 through a subscription-first model that generates predictable, compounding revenue.</li>
+    <li><strong>Market Positioning:</strong> Establish Crelix AI as the AI Marketing Intelligence category leader — the platform marketing professionals recommend by name — through content marketing, platform integrations, and demonstrable ROI results shared publicly.</li>
+  </ol>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>5</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 6 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>1.2 Mission Statement</h2>
+  <div class="hl"><p>It is Crelix AI's mission to democratize elite-level marketing intelligence. We exist to give every business — regardless of size or budget — the same depth of customer understanding, strategic clarity, and creative execution that was previously available only to those who could afford a full-service agency.</p></div>
+
+  <h2>1.3 Guiding Principles</h2>
+  <p><strong>Intelligence Before Output.</strong> Every creative we generate is downstream of genuine understanding. We analyze the business, the customer, the market, and the competitive landscape before a single image is produced. Output quality is a direct function of intelligence quality — and we refuse to cut corners on the former.</p>
+  <p><strong>Speed Without Sacrifice.</strong> We believe speed and quality are not trade-offs. The best marketing insight delivered in three minutes beats a mediocre agency deck delivered in three weeks. We engineer for both simultaneously.</p>
+  <p><strong>Radical Specificity.</strong> Generic content is noise. Crelix AI is obsessively specific — to the business type, the customer demographics, the psychographic pain points, the platform context, and the buying trigger. We produce creatives that feel like they were made by someone who has spent months studying that exact customer, because in a sense, our AI has.</p>
+
+  <h2>1.4 Keys to Success</h2>
+  <p>Crelix AI considers the following factors to be the primary contributors to business success:</p>
+  <ul>
+    <li>Proprietary dual-AI architecture (Grok + Claude) that no competitor currently replicates</li>
+    <li>Marketing Brain intelligence layer as a defensible, compounding moat — it gets smarter with scale</li>
+    <li>Subscription model with high switching costs once a brand's intelligence profile is stored</li>
+    <li>Agency channel partnerships that multiply revenue without proportional cost</li>
+    <li>Relentless focus on measurable customer outcomes: CTR improvement, ROAS, creative throughput</li>
+  </ul>
+
+  <h1>2.0 Company Description</h1>
+
+  <p>Crelix AI is an AI-native SaaS company building the intelligence layer between businesses and their advertising outcomes. The platform ingests any business URL, deploys parallel AI research agents to build a real-time Marketing Brain, and outputs both strategic intelligence and production-ready ad creatives — images, hooks, headlines, benefits, and CTAs — calibrated for the specific platform and audience.</p>
+
+  <p>Crelix serves a broad customer base: independent business owners running their own ads, in-house marketing teams at growth-stage startups, performance marketing agencies managing multi-client portfolios, and e-commerce brands scaling on Meta and Google. The unifying need across all segments is the same: faster, smarter, more targeted advertising creative at a fraction of traditional agency cost.</p>
+
+  <p>The platform is built on Next.js 16 with a serverless backend, enabling instant global scale without infrastructure overhead. AI inference is powered by xAI's Grok API (for research and image generation) and Anthropic's Claude API (for structured synthesis and strategic output).</p>
+
+  <h2>2.1 Ownership</h2>
+  <p>Crelix AI was founded by Fawad Ansari, who serves as Chief Executive Officer, Chief Product Officer, and lead architect of the platform. The founder brings deep experience in AI systems design, full-stack product development, and digital marketing operations. Having personally experienced the pain of generating high-quality ad creatives at scale, the founder built the initial Crelix AI system as a direct solution to a problem encountered firsthand. The company is founder-owned and bootstrapped to its current stage, with investor discussions ongoing.</p>
+
+  <h2>2.2 Legal Form</h2>
+  <p>Crelix AI is currently operating as a private technology company. The company is in the process of incorporating as a C Corporation to facilitate venture investment, equity issuance, and international operations. The C Corp structure is the standard vehicle for high-growth SaaS companies seeking institutional capital.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>6</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 7 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>2.3 Start-Up Summary</h2>
+  <p>Crelix AI was conceived and prototyped in 2025 in response to investor feedback validating the market need for a deeper AI marketing intelligence layer beyond simple creative generation tools. The core platform — including the Marketing Brain API, dual-AI pipeline, and Creative Studio — was built and validated in the first operational quarter. The company is currently in a pre-seed stage, actively onboarding early adopters and refining the product based on direct user feedback.</p>
+  <p>The company has operated capital-efficiently, leveraging API-based AI infrastructure to avoid large upfront model training costs. Initial start-up expenditure has been primarily directed toward product development, API costs, and brand development.</p>
+
+  <h2>2.4 Location and Facilities</h2>
+  <p>Crelix AI operates as a remote-first company with no fixed physical office requirements. This structure is intentional: it enables the company to recruit globally, operate with minimal overhead, and scale team capacity without geographic constraints. All product, engineering, and business operations are conducted through cloud-based collaboration infrastructure.</p>
+  <p>The platform itself is deployed on globally distributed serverless infrastructure (Vercel Edge Network), ensuring sub-100ms response times for users in North America, Europe, and Asia-Pacific. Customer data is stored on compliant, encrypted cloud services with SOC 2 alignment in the product roadmap.</p>
+
+  <h1>3.0 Products &amp; Services</h1>
+
+  <h2>3.1 Products/Services Descriptions</h2>
+  <p>Crelix AI delivers a three-layer intelligence and execution platform for digital advertising. Each layer builds on the one below it, creating a compounding value stack that deepens with every use:</p>
+
+  <h4>Layer 1: Marketing Brain™</h4>
+  <p>The foundational intelligence engine. Enter any business URL and an optional campaign goal. Crelix scrapes the website, runs parallel analysis through Grok AI (business classification, ICP profiling, pain point extraction, buying trigger identification, competitor weaknesses, and emotional language mapping), then synthesizes all findings through Claude AI into a structured Marketing Brain — a complete strategic dossier including ideal customer profile, recommended ad angles, platform strategy, hooks, headlines, and CTAs. Full analysis completes in under 60 seconds.</p>
+
+  <h4>Layer 2: Creative Studio™</h4>
+  <p>The execution layer. Using the Marketing Brain as its briefing document, Crelix generates hyper-realistic advertising background images via Grok Aurora (grok-imagine-image-quality), then overlays a professional ad layout: brand bar, hook text, three benefit bullets, and a CTA button — styled as a real Facebook, Instagram, or Google Display ad. Up to four variants are generated simultaneously, each using a different hook and emotional angle. The result is a complete ad set ready for upload.</p>
+
+  <h4>Layer 3: Campaign Intelligence (In Development)</h4>
+  <p>The strategic layer. A full campaign builder that sequences ad creative into structured campaign arcs — awareness, consideration, conversion — with platform-specific targeting recommendations and a Creative Psychology report explaining the psychological mechanisms behind each ad variant's approach.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>7</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 8 — COMPETITIVE ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>3.2 Competitive Comparison</h2>
+  <p>The AI marketing tools landscape is growing rapidly, but no current competitor offers the combination of pre-generation intelligence research, dual-AI synthesis, and production-ready creative output that Crelix AI delivers. The following table maps the key differentiators:</p>
+
+  <table>
+    <thead><tr><th>Platform</th><th>Marketing Brain</th><th>AI Image Generation</th><th>Copy + Strategy</th><th>Price/mo</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Crelix AI</strong></td><td>✅ Full ICP + Angles + Triggers</td><td>✅ Grok Aurora</td><td>✅ Claude-powered</td><td>$49–$499</td></tr>
+      <tr><td>AdCreative.ai</td><td>❌ No intelligence layer</td><td>✅ Stable Diffusion</td><td>⚠️ Basic templates</td><td>$29–$149</td></tr>
+      <tr><td>Jasper AI</td><td>❌ No research</td><td>❌ No images</td><td>✅ Strong copy</td><td>$49–$125</td></tr>
+      <tr><td>Canva AI</td><td>❌ No intelligence</td><td>✅ Design focus</td><td>⚠️ Limited</td><td>$15–$55</td></tr>
+      <tr><td>Copy.ai</td><td>❌ No research</td><td>❌ No images</td><td>✅ Copy only</td><td>$49–$249</td></tr>
+      <tr><td>Smartly.io</td><td>⚠️ Analytics only</td><td>⚠️ Basic</td><td>⚠️ Limited</td><td>$1,000+</td></tr>
+    </tbody>
+  </table>
+
+  <div class="hl"><p>The critical gap Crelix fills: every competitor starts with <em>what to create</em>. Crelix starts with <em>who the customer is and why they buy</em> — then creates. This sequence difference produces fundamentally better output.</p></div>
+
+  <h4>AdCreative.ai</h4>
+  <p>The closest direct competitor by surface-area comparison. AdCreative.ai generates ad images and copy, primarily for e-commerce and performance marketing teams. However, the platform lacks a strategic intelligence layer — it does not analyze the business's customer psychology, competitive positioning, or buying triggers before generating content. It operates as a visual template engine rather than a marketing intelligence system. Annual revenue estimated at $20–30M with 100,000+ users.</p>
+
+  <h4>Jasper AI</h4>
+  <p>A leading AI copy platform serving marketing teams and agencies. Strong on written content and brand voice consistency. Does not generate images and has no customer research or ICP analysis capability. Positioned as a writing assistant, not a marketing intelligence system. Valued at $1.5B (2022), though facing increased competitive pressure from native AI features in existing tools.</p>
+
+  <h4>Canva AI</h4>
+  <p>A design platform with AI enhancements (Magic Design, Magic Write). Dominant in SMB design workflows due to its template library and ease of use. AI features are supplementary to the design workflow, not intelligence-first. Does not perform business or customer analysis. 170M+ users globally, primarily casual designers rather than performance marketers.</p>
+
+  <h2>3.3 Product/Service Sourcing</h2>
+  <p>Crelix AI's product relies on three core external AI API providers, each selected for capability leadership and reliability:</p>
+  <ul>
+    <li><strong>xAI (Grok API):</strong> Powers both the business intelligence research phase (grok-4 series) and image generation (grok-imagine-image-quality / Aurora). Selected for real-time internet access enabling live market research, and for Aurora's photorealistic advertising image quality.</li>
+    <li><strong>Anthropic (Claude API):</strong> Powers the synthesis and structured output layer. Claude's tool_use capability enables guaranteed-schema JSON output for the Marketing Brain, ensuring reliability and parsability at scale.</li>
+    <li><strong>Vercel / Next.js:</strong> Infrastructure and deployment platform. Serverless edge functions handle API routing, with 300-second timeout support for long-running AI generation tasks.</li>
+  </ul>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>8</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 9 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>3.4 Technology Infrastructure</h2>
+  <p>The Crelix AI platform is built on a modern, serverless-first architecture designed for reliability, cost efficiency, and rapid iteration:</p>
+  <ul>
+    <li><strong>Frontend:</strong> Next.js 16 with React 19, App Router, Turbopack. Pure CSS design system with Syne (display) and DM Sans (body) typography. No UI component library dependencies for maximum performance.</li>
+    <li><strong>Backend:</strong> Next.js Route Handlers (serverless API routes). Extended timeout support (maxDuration: 300) for AI inference tasks. All AI calls are API-based — no model hosting required.</li>
+    <li><strong>AI Pipeline:</strong> Dual-AI sequential and parallel processing. Grok runs concurrent business + customer brain research; Claude synthesizes into structured JSON via constrained tool_use calls.</li>
+    <li><strong>Image Generation:</strong> Parallel variant generation using Promise.allSettled — one failed variant does not cancel the rest. Supports up to 4 simultaneous image generation requests.</li>
+    <li><strong>Security:</strong> API keys stored in server-side environment variables only. No client-side AI key exposure. All business URL scraping performed server-side.</li>
+  </ul>
+
+  <h2>3.5 Service Delivery</h2>
+  <p>Crelix AI's service delivery follows a self-serve SaaS model with three delivery phases per user session:</p>
+  <h4>Phase 1: Intelligence Gathering</h4>
+  <p>The user enters a business URL and optional campaign goal. Crelix scrapes the site, runs the dual-AI Marketing Brain pipeline, and returns a complete intelligence dossier within 45–90 seconds. The user reviews ICP, pain points, recommended angles, platform strategy, hooks, headlines, and CTAs — building strategic confidence before spending a single creative budget dollar.</p>
+  <h4>Phase 2: Creative Generation</h4>
+  <p>Using the Marketing Brain output, the user configures creative parameters: theme (lighting style), platform (Meta, Google, TikTok), size, and number of variants (1–4). Crelix generates parallel ad creatives — each a complete ad mockup with image, overlay copy, brand bar, benefit bullets, and CTA — in 60–120 seconds per variant.</p>
+  <h4>Phase 3: Export and Deployment</h4>
+  <p>Generated creatives are available for download and direct upload to ad platforms. Future delivery enhancements include direct Meta Ads Manager integration, campaign scheduling, and performance feedback loops.</p>
+
+  <h2>3.6 Future Product Roadmap</h2>
+  <p>Crelix AI has a structured 12-month roadmap beyond the current core platform:</p>
+  <ul>
+    <li><strong>Q3 2026 — Campaign Builder:</strong> Multi-ad campaign architecture tool. Sequences creatives into awareness → consideration → conversion funnels with platform-specific targeting recommendations.</li>
+    <li><strong>Q3 2026 — Creative Psychology Report:</strong> Post-generation explainer showing the psychological mechanism behind each creative (social proof, fear of loss, identity alignment, etc.) and why it should convert for the specific ICP.</li>
+    <li><strong>Q4 2026 — Brand Memory:</strong> Persistent brand profile storage (via Supabase). Businesses build a stored intelligence profile that improves every subsequent generation — brand voice, visual style, offer history, and performance data.</li>
+    <li><strong>Q4 2026 — Customer Voice Engine:</strong> Upload customer reviews, support tickets, or survey data. Claude analyzes and extracts verbatim customer language to supercharge ICP accuracy and hook generation.</li>
+    <li><strong>Q1 2027 — Platform Integrations:</strong> Direct Meta Ads Manager and Google Ads API connections for one-click campaign launch from within Crelix.</li>
+    <li><strong>Q1 2027 — Performance Intelligence:</strong> Connect ad account data to correlate creative elements with actual campaign performance, creating a feedback loop that improves future generation quality.</li>
+  </ul>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>9</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 10 — MARKET ANALYSIS ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h1>4.0 Market Analysis</h1>
+
+  <p>The global digital advertising market reached $740 billion in 2024 and is projected to exceed $870 billion by 2027 (Statista, 2024). Within this landscape, the marketing technology (martech) sector — the software, tools, and platforms that enable the planning, execution, and optimization of marketing — has grown to over 14,000 solutions globally. Despite this abundance of tools, a critical gap persists: the intelligence layer between business context and creative output remains largely manual, agency-dependent, or absent altogether.</p>
+
+  <p>AI-specific marketing software is the fastest-growing sub-segment of martech. The AI in marketing market was valued at $15.8 billion in 2021 and is projected to reach $107.5 billion by 2028, growing at a CAGR of 26.1% (Fortune Business Insights, 2023). Crelix AI is positioned at the intersection of this high-growth category with the massive and expanding digital advertising spend market.</p>
+
+  <h2>4.1 Industry Analysis</h2>
+  <p>The marketing intelligence and AI creative tools industry is undergoing a structural shift. For decades, the production of strategic marketing intelligence and high-quality ad creative required the following resources: a market research firm for consumer insights, a strategist to synthesize findings into a creative brief, a copywriter to develop hooks and headlines, a graphic designer to produce visuals, and a media buyer to translate creative into platform-specific campaigns. This five-step process took weeks and cost thousands to tens of thousands of dollars per campaign cycle.</p>
+
+  <p>Generative AI has disrupted the creative execution layer — tools like Midjourney, DALL-E, and Stable Diffusion have made image generation accessible. However, the strategic intelligence layer — the "why" and "who" before the creative — remains largely untouched by current AI tools. The result is a flood of generic, disconnected content that performs poorly because it was not built on genuine customer understanding.</p>
+
+  <p>Crelix AI addresses this structural gap directly: intelligence first, execution second.</p>
+
+  <h3>4.1.1 Market Size</h3>
+
+  <table>
+    <thead><tr><th>Market Segment</th><th>2024 Value</th><th>2028 Projection</th><th>CAGR</th></tr></thead>
+    <tbody>
+      <tr><td>Global Digital Advertising</td><td>$740B</td><td>$870B</td><td>4.2%</td></tr>
+      <tr><td>Marketing Technology (Martech)</td><td>$560B</td><td>$680B</td><td>5.2%</td></tr>
+      <tr><td>AI in Marketing</td><td>$22B</td><td>$107B</td><td>26.1%</td></tr>
+      <tr><td>AI Creative Tools (TAM)</td><td>$8B</td><td>$28B</td><td>23.8%</td></tr>
+      <tr><td>Crelix AI Serviceable Market (SAM)</td><td>$2.4B</td><td>$8.5B</td><td>25%+</td></tr>
+    </tbody>
+  </table>
+
+  <p>Crelix AI's Serviceable Addressable Market (SAM) consists of the SMB, mid-market, and agency segments that use paid digital advertising and have the budget and motivation to adopt AI tooling. This segment is estimated at 12–15 million businesses globally with annual digital ad spend between $5,000 and $500,000.</p>
+
+  <h3>4.1.2 Industry Participants</h3>
+  <p>The AI marketing tools market includes participants across several categories: AI writing assistants (Jasper, Copy.ai, Writesonic), AI image generators (Midjourney, Adobe Firefly, DALL-E), ad creative platforms (AdCreative.ai, Pencil, Smartly.io), and full-suite marketing AI platforms (HubSpot AI, Salesforce Einstein, Marketo). No current participant combines business intelligence research, ICP analysis, and production-ready creative generation in a single workflow.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>10</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 11 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h3>4.1.3 Main Competitors</h3>
+
+  <h4>AdCreative.ai</h4>
+  <p>The most direct surface-level competitor. Generates ad images and basic copy for performance marketers. Has achieved significant adoption (~100K+ users) but is fundamentally a template-and-variation engine rather than an intelligence platform. Does not perform customer research, competitive analysis, or strategic positioning work. Customers frequently report that creatives "look AI-generated" and lack the strategic intent that drives performance. This gap is Crelix AI's primary entry point.</p>
+
+  <h4>Jasper AI</h4>
+  <p>Dominant in AI-assisted copywriting with a large enterprise customer base. Strong brand voice capabilities and document-level content generation. Does not produce images and has no visual advertising workflow. Serves primarily content marketing and brand teams, not performance advertisers. Positioned upstream from Crelix's use case rather than in direct competition.</p>
+
+  <h4>Pencil (by Vidsy)</h4>
+  <p>An AI-powered ad creative platform that generates video and static ad variants, primarily targeting enterprise advertisers and agencies. Strong in video creative automation. Lacks the intelligence research layer — does not analyze the advertiser's customer profile or market before generating content. Pricing is enterprise-focused and inaccessible to SMBs.</p>
+
+  <h4>Adobe Firefly</h4>
+  <p>Adobe's generative AI integrated across Creative Cloud. Exceptionally strong image generation quality. Designed for professional designers with existing brand assets and workflows — not for performance marketers who need strategic direction. Requires significant design skill to translate outputs into effective advertising creative.</p>
+
+  <h3>4.1.4 Market Segments</h3>
+  <p>Crelix AI identifies four primary market segments, each with distinct needs and willingness to pay:</p>
+  <ul>
+    <li><strong>Independent Business Owners (SMBs):</strong> Businesses spending $500–$10,000/month on paid ads who cannot afford agencies. Need speed, simplicity, and strategic guidance. Price-sensitive but high volume. Primary acquisition channel: organic search and social proof.</li>
+    <li><strong>In-House Marketing Teams:</strong> Growth-stage startups and mid-market companies with 2–10 person marketing teams. Need to produce more creative volume without proportionally growing headcount. Willing to pay for tools that reduce bottlenecks. Decision makers are marketing managers and directors.</li>
+    <li><strong>Marketing Agencies:</strong> Boutique and mid-size agencies managing 5–50 client accounts. High creative production demand, strong ROI pressure. Crelix enables agencies to onboard new clients and generate initial creative strategies in hours rather than weeks. Highest ARPU potential via Agency plan tier.</li>
+    <li><strong>E-Commerce Brands:</strong> DTC brands running continuous Meta and Google campaigns. Need constant creative refresh to combat ad fatigue. Crelix's parallel variant generation and platform-specific sizing directly serves this use case.</li>
+  </ul>
+
+  <h2>4.2 Market Tests</h2>
+  <p>During the early development phase, the Crelix AI platform was tested across a range of business types to validate the Marketing Brain's ability to produce accurate, specific, and useful intelligence output. Tests were conducted across B2B SaaS companies, local service businesses (roofing, HVAC, plumbing), e-commerce brands, health and wellness brands, and financial services firms. In all cases, the Marketing Brain produced ICP profiles, pain points, and hook copy that beta users described as "more accurate than briefs we've written ourselves after weeks of research."</p>
+  <p>Image generation quality tests confirmed that character derivation from ICP data (rather than generic scene prompts) dramatically improved creative relevance. Overlay copy tests confirmed that Facebook-style ad mockups with brand bar, hook, benefit bullets, and CTA significantly increased user perceived value compared to raw image-only outputs.</p>
+
+  <h2>4.3 Target Market Segment Strategy</h2>
+  <p>Crelix AI's go-to-market strategy prioritizes the marketing agency segment as the primary beachhead, for three strategic reasons: (1) agencies have high creative volume needs that make the platform's ROI immediately obvious, (2) agencies multiply Crelix's reach — a single Agency customer uses Crelix for 10–50 client businesses, and (3) agencies are vocal referrers when a tool genuinely improves their workflow and margins.</p>
+
+  <h3>4.3.1 Market Needs</h3>
+  <p>The fundamental market need Crelix addresses is the <em>intelligence-to-creative gap</em>. Current tools assume the marketer already knows their customer deeply, has a clear creative brief, and simply needs execution assistance. In reality, most marketers — especially at SMBs and young startups — are generating creative without a solid strategic foundation. They A/B test randomly, not strategically. They write hooks from intuition, not from documented pain points. They choose creative angles from aesthetics, not from buying triggers. Crelix AI provides the missing foundation.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>11</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 12 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h3>4.3.2 Market Trends</h3>
+  <p>Three macro trends are accelerating Crelix AI's market opportunity:</p>
+  <p><strong>AI Adoption in Marketing is Mandatory, Not Optional.</strong> A 2024 HubSpot survey found that 74% of marketers are already using AI in their workflows, and 85% plan to increase AI tool usage. The question is no longer whether to use AI — it is which AI tools produce the best outcome. This normalizes the category and eliminates adoption resistance.</p>
+  <p><strong>Rising Ad Creative Production Demands.</strong> Meta's own data shows that advertisers who test 15+ creative variations per month see 40–50% higher ROAS than those who test fewer than 5. The industry is moving toward high-volume creative testing as best practice, which directly amplifies the need for tools that can produce large quantities of differentiated, strategic creative quickly.</p>
+  <p><strong>Cost and Quality Inflation in Traditional Agency Services.</strong> Agency fees have continued to rise while CMO budgets remain constrained. The average monthly retainer for a boutique creative agency ranges from $5,000–$25,000. Crelix AI delivers comparable strategic output for $149–$499/month — a 10–100× cost reduction. As this price difference becomes more widely understood, substitution accelerates.</p>
+
+  <h3>4.3.3 Market Growth</h3>
+  <p>The AI in marketing segment is growing at 26.1% CAGR — among the fastest growth rates of any software category. This growth is driven by improving AI model quality, falling inference costs, and increasing enterprise willingness to integrate AI into core business workflows. For Crelix AI specifically, the serviceable market expands each year as: (a) more businesses shift budget to digital advertising, (b) more marketers accept AI-generated creative as production-quality output, and (c) platform integrations make creative generation a natural workflow step rather than a standalone tool use.</p>
+  <p>Conservative modeling assumes Crelix captures 0.02% of the Serviceable Addressable Market in Year 1, growing to 0.08% by Year 3. These capture rates imply approximately 480 customers in Year 1, 1,900 in Year 2, and 5,700 in Year 3 — well within achievable bounds for a focused go-to-market execution.</p>
+
+  <h2>4.4 Positioning</h2>
+  <p>Crelix AI positions itself on a single, defensible insight: <em>AI tools that start with execution are missing the most important step.</em> The platform is positioned not as a creative tool that happens to use AI, but as a marketing intelligence system that happens to produce creatives. This reframe changes the competitive landscape entirely — Crelix does not compete with Canva on design quality, or with Jasper on writing polish. It competes on strategic depth, which is a category where no current tool is winning.</p>
+  <p>The positioning statement for external audiences: <strong>"The AI that thinks like your best strategist and creates like your best designer — before you spend a dollar."</strong></p>
+
+  <h1>5.0 Marketing Strategy and Implementation</h1>
+
+  <p>To achieve Year 1 revenue targets, Crelix AI must acquire approximately 400–500 paying customers at an average revenue of $80–120/month. The primary channels are content marketing (SEO), social proof and case study distribution, agency partnership development, and community presence in marketing-adjacent spaces (Twitter/X, LinkedIn, Reddit's r/PPC, r/marketing).</p>
+
+  <h2>5.1 SWOT Analysis</h2>
+
+  <div class="swot">
+    <div class="sw sw-s">
+      <div class="sw-title">Strengths</div>
+      <ul>
+        <li>Only platform combining research intelligence + creative generation in one workflow</li>
+        <li>Proprietary dual-AI architecture (Grok + Claude) not replicable by single-API competitors</li>
+        <li>10–100× cheaper than agency alternatives with comparable strategic output</li>
+        <li>Instant time-to-value: full Marketing Brain + creatives in under 3 minutes</li>
+        <li>Deep specificity — not generic; calibrated to each business and customer</li>
+        <li>Platform-specific creative optimization (Meta, Google, TikTok)</li>
+      </ul>
+    </div>
+    <div class="sw sw-w">
+      <div class="sw-title">Weaknesses</div>
+      <ul>
+        <li>Early-stage brand with limited public case studies and social proof</li>
+        <li>Dependency on third-party AI API providers (xAI, Anthropic) for core functionality</li>
+        <li>No current direct ad platform integrations (Meta, Google Ads)</li>
+        <li>Small founding team — limited bandwidth for simultaneous product + GTM</li>
+        <li>No brand memory yet — each session starts without historical context</li>
+      </ul>
+    </div>
+    <div class="sw sw-o">
+      <div class="sw-title">Opportunities</div>
+      <ul>
+        <li>$107B AI in marketing market growing at 26% CAGR through 2028</li>
+        <li>Agency channel: one partnership multiplies reach to 10–50 client businesses</li>
+        <li>Competitor quality gap — AdCreative.ai users actively complaining about generic output</li>
+        <li>Platform integrations (Meta, Google) create long-term switching cost moat</li>
+        <li>International expansion: non-English market virtually untapped by AI creative tools</li>
+      </ul>
+    </div>
+    <div class="sw sw-t">
+      <div class="sw-title">Threats</div>
+      <ul>
+        <li>Large platforms (Meta, Google) building native AI creative tools</li>
+        <li>AI API cost inflation reducing margin if model pricing rises</li>
+        <li>Well-funded competitors (Jasper, AdCreative) adding intelligence layer features</li>
+        <li>Advertiser skepticism about AI-generated creative quality for premium brands</li>
+        <li>Regulatory changes affecting AI-generated advertising content</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>14</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 13 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>5.2 Strategy Pyramid</h2>
+  <p>Crelix AI's strategy is built on a three-layer pyramid. The foundation is <strong>product excellence</strong> — building the most accurate, most specific, and most useful marketing intelligence system in the world, such that users who try Crelix cannot imagine going back to guessing. The middle layer is <strong>community and proof</strong> — generating and sharing documented cases of real businesses improving their ROAS, reducing creative production time, and increasing conversion rates using Crelix. The apex is <strong>ecosystem integration</strong> — becoming the default intelligence layer that connects directly to ad platforms, CRMs, and agency management tools, making Crelix a structural part of the marketing workflow rather than a discretionary tool.</p>
+  <p>Crelix plans to achieve a minimum of 20% of its revenue from annual plan subscriptions, providing cash flow stability and reducing monthly churn sensitivity. Agencies on annual Agency plans represent the highest-value, most stable revenue cohort and will receive priority product access and dedicated support.</p>
+
+  <h2>5.3 Unique Selling Proposition (USP)</h2>
+  <p>Crelix AI's USP operates at two levels. For the end user, the USP is: <em>"The first AI that understands your customer before it creates your ad — giving you the strategic confidence of a senior copywriter and the execution speed of an AI."</em> For the investor, the USP is: <em>"The only platform with a compounding intelligence moat — the more businesses use Crelix, the richer the contextual training becomes, and the harder it is for a new entrant to replicate the quality delta."</em></p>
+  <p>Four specific differentiators set Crelix apart from every current competitor: (1) Pre-generation intelligence research as a mandatory step, not an optional add-on. (2) Dual-AI architecture giving access to the best research model (Grok) and the best synthesis model (Claude) simultaneously. (3) ICP-derived image generation — character, scene, and emotional moment are derived from actual customer psychology, not random visual prompts. (4) Full ad mockup output that mirrors real platform ad layouts, so what users see is exactly what they upload.</p>
+
+  <h2>5.4 Competitive Edge</h2>
+  <p>Crelix's competitive edge is its sequencing. The company does not ask "what should this ad look like?" — it asks "who is buying this, why are they buying it, and what emotional moment will make them stop scrolling?" The creative is an output of intelligence, not a substitute for it. This sequencing produces measurably better creative because it ensures every visual element, every word, and every CTA is rooted in documented customer psychology rather than aesthetic preference.</p>
+
+  <h2>5.5 Marketing Strategy and Positioning</h2>
+  <p>Crelix AI employs a content-led, community-amplified go-to-market strategy. The core thesis is that the best way to acquire performance marketers is to demonstrate performance — not through ads about the product, but through documented results that spread organically within professional communities.</p>
+
+  <h3>5.5.1 Positioning Statement</h3>
+  <p>For performance marketers, agencies, and growth-stage businesses who need advertising creative that actually converts, Crelix AI is the only AI Marketing Intelligence Platform that researches your customer, builds your strategy, and generates your ads in one unified workflow — delivering agency-quality outcomes at a fraction of the time and cost.</p>
+
+  <h3>5.5.2 Pricing Strategy</h3>
+  <p>Crelix AI uses a tiered subscription model aligned to customer segment value:</p>
+  <table>
+    <thead><tr><th>Plan</th><th>Price</th><th>Target Segment</th><th>Key Inclusions</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Starter</strong></td><td>$49/month</td><td>SMBs, solopreneurs</td><td>10 Marketing Brains/mo, 20 creatives/mo, 2 platforms</td></tr>
+      <tr><td><strong>Pro</strong></td><td>$149/month</td><td>In-house teams</td><td>Unlimited Brains, 100 creatives/mo, all platforms, campaign builder</td></tr>
+      <tr><td><strong>Agency</strong></td><td>$499/month</td><td>Agencies</td><td>Unlimited everything, 25 brand profiles, white-label exports, priority support</td></tr>
+    </tbody>
+  </table>
+  <p>Annual plan subscribers receive a 20% discount, incentivizing upfront commitment and reducing monthly churn. A free trial (3 Marketing Brains, 5 creatives) is available without credit card, lowering acquisition friction.</p>
+
+  <h3>5.5.3 Promotion and Advertising Strategy</h3>
+  <p>Primary promotion channels: (1) Content marketing — in-depth guides on ad creative strategy, ICP development, and platform-specific advertising published at crelix.ai/blog, targeting high-intent search queries. (2) Twitter/X and LinkedIn — the founder distributes behind-the-scenes product development content and marketing intelligence teardowns to build audience and authority. (3) Reddit marketing communities — authentic participation in r/PPC, r/FacebookAds, r/marketing with genuine value before any promotional content. (4) YouTube — video demonstrations of the full Marketing Brain → Creative workflow, showing real businesses being analyzed in real time.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>15</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 14 ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h3>5.5.4 Website</h3>
+  <p>The Crelix AI website (crelix.ai) serves as both the primary marketing asset and the product delivery platform. The site is designed to accomplish three objectives simultaneously: demonstrate the platform's intelligence depth to prospective users, convert visitors into trial users through clear value proposition communication, and provide existing customers access to the full studio workflow. The website features live product demonstrations, case studies with measurable results, and a transparent pricing structure. SEO is a primary traffic acquisition strategy, with content structured to rank for high-intent queries including "AI ad creative generator," "marketing intelligence platform," and "AI ad copywriter."</p>
+
+  <h3>5.5.5 Marketing Programs</h3>
+  <p>Crelix AI will implement three structured marketing programs in Year 1:</p>
+  <ul>
+    <li><strong>Agency Partner Program:</strong> Boutique agencies that sign Agency plan agreements receive co-marketing support, early access to new features, and revenue-share referral credits for client upgrades. Target: 20 agency partners in Year 1.</li>
+    <li><strong>Case Study Program:</strong> Active customers who provide documented performance data (before/after CTR, ROAS, creative production time) receive 3 months of free service. These case studies are distributed across all channels as the primary conversion asset.</li>
+    <li><strong>Free Campaign Audit Funnel:</strong> A lead generation tool where any business can enter their website URL and receive a partial Marketing Brain analysis — ICP and top pain points — for free. This creates product-qualified leads with demonstrated value before any payment discussion.</li>
+  </ul>
+
+  <h2>5.6 Sales Strategy</h2>
+  <p>Crelix AI's primary sales motion is product-led growth (PLG). The free trial provides immediate, tangible value — a complete Marketing Brain analysis — that serves as its own sales demonstration. Users who complete a Marketing Brain analysis and see their ICP, pain points, and hooks accurately captured convert to paid plans at a significantly higher rate than users who read about the product without experiencing it.</p>
+  <p>For Agency plan prospects, a human-assisted sales motion is layered on top of PLG: the founder or a dedicated sales hire conducts a personalized onboarding call showing how Crelix fits the agency's specific workflow and client mix. This high-touch approach is warranted for the $499/month price point and the significant LTV of an agency customer (est. $6,000–$18,000 total LTV over 12–36 months).</p>
+
+  <h3>5.6.1 Sales Forecast</h3>
+  <table>
+    <thead><tr><th>Annual Sales Forecast</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Starter Plan Revenue</td><td>$70,560</td><td>$188,160</td><td>$423,360</td></tr>
+      <tr><td>Pro Plan Revenue</td><td>$214,560</td><td>$537,120</td><td>$1,073,520</td></tr>
+      <tr><td>Agency Plan Revenue</td><td>$179,640</td><td>$599,880</td><td>$1,499,400</td></tr>
+      <tr class="tr-total"><td><strong>Total ARR</strong></td><td><strong>$464,760</strong></td><td><strong>$1,325,160</strong></td><td><strong>$2,996,280</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>5.6.2 Sales Programs</h3>
+  <p>Year 1 sales programs: (1) Annual plan incentive — 20% discount drives upfront cash and reduces churn. (2) Referral program — existing customers receive one free month per referred paying customer. (3) Agency volume pricing — agencies managing 10+ brands receive custom negotiated pricing with volume commitments. (4) Startup accelerator partnerships — exclusive discounts for startups within YC, Techstars, and similar accelerator portfolios, capturing high-growth early-stage companies at the beginning of their advertising journey.</p>
+
+  <h2>5.7 Legal</h2>
+  <p>Crelix AI maintains standard SaaS legal protections: Terms of Service governing platform use and content generation, a Privacy Policy compliant with GDPR and CCPA requirements, and an AI Content Disclosure policy informing users that generated content is AI-produced. The company does not claim copyright on AI-generated outputs; per current legal precedent, users are responsible for ensuring generated content does not infringe third-party rights. The company retains legal counsel on AI content liability, data protection, and corporate structure matters. Intellectual property protection for the Marketing Brain methodology and dual-AI architecture is under ongoing legal review for trade secret and potential patent protection.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>16</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 15 — MILESTONES + ORG ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>5.8 Milestones</h2>
+  <table>
+    <thead><tr><th>Milestone</th><th>Target Date</th><th>Success Metric</th></tr></thead>
+    <tbody>
+      <tr><td>Marketing Brain + Creative Studio launch</td><td>Q2 2026</td><td>Platform live, 50 beta users onboarded</td></tr>
+      <tr><td>First 100 paying customers</td><td>Q3 2026</td><td>$10,000+ MRR</td></tr>
+      <tr><td>Campaign Builder + Psychology Report</td><td>Q3 2026</td><td>Feature shipped, used by 80% of Pro+ users</td></tr>
+      <tr><td>Brand Memory (Supabase integration)</td><td>Q4 2026</td><td>500+ brand profiles stored</td></tr>
+      <tr><td>Agency Partner Program launch</td><td>Q4 2026</td><td>20 agency partners signed</td></tr>
+      <tr><td>$500K ARR</td><td>Q4 2026</td><td>~400 paying customers</td></tr>
+      <tr><td>Meta Ads Manager integration</td><td>Q1 2027</td><td>One-click campaign publish live</td></tr>
+      <tr><td>Seed funding round close</td><td>Q1 2027</td><td>$1.5–2.5M raised</td></tr>
+      <tr><td>$2M ARR</td><td>Q4 2027</td><td>~1,400 paying customers</td></tr>
+      <tr><td>Series A raise</td><td>Q2 2028</td><td>$8–12M at $40–60M valuation</td></tr>
+    </tbody>
+  </table>
+
+  <h2>5.9 Exit Strategy</h2>
+  <p>Crelix AI's primary exit strategy is acquisition by a major marketing technology or digital advertising platform. Natural acquirers include: (1) Meta Platforms — direct alignment with ad creative automation at scale; (2) Adobe — extends Creative Cloud into performance marketing intelligence; (3) Salesforce / HubSpot — adds creative intelligence to existing CRM + marketing automation suites; (4) Google — integrates with Performance Max and Google Ads campaign management. A secondary exit path is an IPO, contingent on achieving $20M+ ARR with strong growth momentum and net revenue retention above 120%. The target exit horizon is 5–7 years post-launch.</p>
+
+  <h1>6.0 Organization and Management</h1>
+
+  <h2>6.1 Organizational Structure</h2>
+  <p>In its current stage, Crelix AI operates with a flat, founder-led structure. The founding team handles all product, engineering, marketing, and business development functions. As revenue grows, the organization will expand in a deliberate sequence: first hire is Head of Growth (or senior marketing/sales), second hire is a senior AI/backend engineer to accelerate the product roadmap, third hire is a customer success manager to protect and expand the agency account base. The organizational model is deliberately lean — Crelix AI will never hire ahead of revenue and will maintain a ratio of at least $150,000 ARR per full-time employee.</p>
+
+  <h2>6.2 Management Team</h2>
+  <h4>Fawad Ansari — Founder &amp; CEO</h4>
+  <p>Founder and lead architect of the Crelix AI platform. Responsible for product vision, AI system design, full-stack engineering, and business strategy. Has designed and built the complete dual-AI pipeline from concept to production, including the Marketing Brain intelligence architecture, Creative Studio generation system, and the Next.js platform infrastructure. Brings firsthand experience in digital marketing, AI systems, and SaaS product development. The founder's technical depth across both AI systems and product design is a significant competitive advantage at the current stage — the company can move at the speed of a single technical decision-maker without coordination overhead.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>18</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 16 — FINANCIAL PLAN ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>6.3 Management Team Gaps</h2>
+  <p>Crelix AI currently has identified gaps in two functional areas that are prioritized for the first two hires: (1) <strong>Growth and Sales</strong> — a senior marketer or head of growth with demonstrated experience in PLG SaaS acquisition, content marketing, and agency partnership development; and (2) <strong>AI Engineering</strong> — a backend engineer specializing in AI pipelines, API optimization, and scalable inference infrastructure who can accelerate the roadmap while freeing the founder for strategic priorities. A third gap — financial operations — will be addressed through an outsourced CFO arrangement until revenue justifies a full-time hire.</p>
+
+  <h2>6.4 Personnel Plan</h2>
+  <table>
+    <thead><tr><th>Role</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Founder / CEO</td><td>$60,000</td><td>$90,000</td><td>$120,000</td></tr>
+      <tr><td>Head of Growth (Hire 1)</td><td>—</td><td>$85,000</td><td>$95,000</td></tr>
+      <tr><td>AI Engineer (Hire 2)</td><td>—</td><td>$100,000</td><td>$110,000</td></tr>
+      <tr><td>Customer Success Manager</td><td>—</td><td>—</td><td>$75,000</td></tr>
+      <tr><td>Sales / Business Development</td><td>—</td><td>—</td><td>$80,000</td></tr>
+      <tr class="tr-total"><td><strong>Total Personnel</strong></td><td><strong>$60,000</strong></td><td><strong>$275,000</strong></td><td><strong>$480,000</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h2>6.5 Board of Advisors</h2>
+  <p>Crelix AI is actively recruiting a Board of Advisors across three competency areas: (1) a senior performance marketing practitioner with agency ownership experience who can validate product direction and open agency partnership doors; (2) an AI/ML technical advisor with experience in production AI systems and LLM application architecture; and (3) a SaaS growth advisor with demonstrated experience scaling PLG-motion B2B SaaS companies from $0 to $10M ARR. Advisor equity allocations of 0.1–0.25% (with 2-year vesting) are budgeted from the founding equity pool.</p>
+
+  <h1>7.0 Financial Plan</h1>
+
+  <h2>7.1 Important Assumptions</h2>
+  <p>The following assumptions underpin all financial projections:</p>
+  <ul>
+    <li><strong>Customer Acquisition Cost (CAC):</strong> $80 blended (primarily content/organic in Year 1), declining to $60 in Year 3 as organic compounding grows</li>
+    <li><strong>Monthly Churn Rate:</strong> 5% in Year 1, improving to 3.5% in Year 2 and 2.5% in Year 3 as product stickiness increases via Brand Memory feature</li>
+    <li><strong>Average Revenue Per User (ARPU):</strong> $95/month blended in Year 1 (mix of Starter, Pro, Agency), growing to $115/month by Year 3 as Agency tier share grows</li>
+    <li><strong>AI API Cost per Active User:</strong> $8–12/month (Marketing Brain + image generation combined), declining with volume discounts</li>
+    <li><strong>Conversion: Free Trial → Paid:</strong> 18% in Year 1, improving to 24% by Year 3</li>
+    <li><strong>Annual Plan Uptake:</strong> 30% of customers on annual plans, providing 12-month upfront cash</li>
+    <li><strong>Gross Margin Target:</strong> 70–75% at scale (typical SaaS-AI blended margin)</li>
+  </ul>
+
+  <h2>7.2 Start-Up Costs</h2>
+  <table>
+    <thead><tr><th>Start-Up Cost Item</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td>Product development (founder time, first 6 months)</td><td>$30,000</td></tr>
+      <tr><td>AI API costs (development + testing)</td><td>$8,000</td></tr>
+      <tr><td>Domain, hosting, Vercel infrastructure</td><td>$2,400/year</td></tr>
+      <tr><td>Legal (incorporation, ToS, Privacy Policy)</td><td>$4,500</td></tr>
+      <tr><td>Brand design (logo, design system)</td><td>$3,000</td></tr>
+      <tr><td>Marketing (initial content creation, tooling)</td><td>$5,000</td></tr>
+      <tr><td>Software subscriptions (dev tools, analytics)</td><td>$3,600/year</td></tr>
+      <tr class="tr-total"><td><strong>Total Start-Up Costs</strong></td><td><strong>$56,500</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>19</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 17 — FINANCIALS ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h2>7.3 Source and Use of Funds</h2>
+  <p>Crelix AI is currently self-funded by the founder through bootstrapped product development. The company is pursuing a pre-seed round of $300,000–$500,000 from angel investors and pre-seed funds to accelerate product development, marketing, and the first team hire. A seed round of $1.5–2.5M is projected for Q1 2027, targeting experienced SaaS investors with martech portfolio experience.</p>
+  <table>
+    <thead><tr><th>Use of Funds (Seed Round — $2M)</th><th>Allocation</th><th>Amount</th></tr></thead>
+    <tbody>
+      <tr><td>Engineering (AI pipeline, platform features)</td><td>40%</td><td>$800,000</td></tr>
+      <tr><td>Growth &amp; Marketing</td><td>30%</td><td>$600,000</td></tr>
+      <tr><td>Sales (Agency BD)</td><td>15%</td><td>$300,000</td></tr>
+      <tr><td>Operations &amp; Infrastructure</td><td>10%</td><td>$200,000</td></tr>
+      <tr><td>Legal &amp; G&amp;A</td><td>5%</td><td>$100,000</td></tr>
+      <tr class="tr-total"><td><strong>Total</strong></td><td><strong>100%</strong></td><td><strong>$2,000,000</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h2>7.4 Break-Even Analysis</h2>
+  <p>Crelix AI's monthly break-even point is achieved when subscription revenue covers all operating expenses including AI API costs, infrastructure, personnel, and overhead. At the founder-only staffing level (Year 1 pre-hiring), the break-even MRR is approximately $12,000–$15,000, representing roughly 130–160 paying customers at blended ARPU. This is achievable within 6–9 months of launch with focused go-to-market execution.</p>
+  <p>Post-first-hire (Head of Growth, estimated $85K/year), the break-even MRR rises to approximately $23,000–$26,000, or 240–270 paying customers. At the projected churn rate and growth trajectory, this milestone is achievable within 12–15 months of launch.</p>
+
+  <h2>7.5 Projections</h2>
+  <h3>7.5.1 Projected Profit and Loss</h3>
+  <table>
+    <thead><tr><th>P&amp;L Summary</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Total Revenue (ARR)</td><td>$464,760</td><td>$1,325,160</td><td>$2,996,280</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;Starter Plan</td><td>$70,560</td><td>$188,160</td><td>$423,360</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;Pro Plan</td><td>$214,560</td><td>$537,120</td><td>$1,073,520</td></tr>
+      <tr><td>&nbsp;&nbsp;&nbsp;Agency Plan</td><td>$179,640</td><td>$599,880</td><td>$1,499,400</td></tr>
+      <tr class="tr-sub"><td colspan="4">Cost of Revenue</td></tr>
+      <tr><td>AI API Costs (Grok + Claude)</td><td>($55,800)</td><td>($132,500)</td><td>($239,700)</td></tr>
+      <tr><td>Infrastructure (Vercel, DB)</td><td>($12,000)</td><td>($28,800)</td><td>($52,800)</td></tr>
+      <tr class="tr-total"><td><strong>Gross Profit</strong></td><td><strong>$396,960</strong></td><td><strong>$1,163,860</strong></td><td><strong>$2,703,780</strong></td></tr>
+      <tr><td>Gross Margin %</td><td>85.4%</td><td>87.8%</td><td>90.2%</td></tr>
+      <tr class="tr-sub"><td colspan="4">Operating Expenses</td></tr>
+      <tr><td>Personnel</td><td>($60,000)</td><td>($275,000)</td><td>($480,000)</td></tr>
+      <tr><td>Sales &amp; Marketing</td><td>($45,000)</td><td>($140,000)</td><td>($320,000)</td></tr>
+      <tr><td>G&amp;A / Legal / Software</td><td>($18,000)</td><td>($35,000)</td><td>($60,000)</td></tr>
+      <tr class="tr-total"><td><strong>Net Operating Income</strong></td><td><strong>$273,960</strong></td><td><strong>$713,860</strong></td><td><strong>$1,843,780</strong></td></tr>
+      <tr><td>Net Margin %</td><td>58.9%</td><td>53.9%</td><td>61.5%</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:9pt;color:#888;margin-top:4px">* Year 1 projections assume bootstrapped operations. Year 2–3 assume seed capital deployed for team expansion.</p>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>21</span></div>
+</div>
+
+<!-- ═══════════════════ PAGE 18 — CASH FLOW + BALANCE SHEET ═══════════════════ -->
+<div class="page">
+  <div class="ph"><div class="ph-logo"><div class="ph-dot"></div><span class="ph-name">CreixAI</span></div><span class="ph-doc">AI Marketing Intelligence Platform — Business Plan</span></div>
+
+  <h3>7.5.2 Projected Cash Flow</h3>
+  <table>
+    <thead><tr><th>Cash Flow Summary</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Cash from Operations</td><td>$273,960</td><td>$713,860</td><td>$1,843,780</td></tr>
+      <tr><td>Annual Plan Upfront Collections (30%)</td><td>$41,830</td><td>$119,264</td><td>$269,665</td></tr>
+      <tr><td>Seed Investment (Q1 Year 2)</td><td>—</td><td>$2,000,000</td><td>—</td></tr>
+      <tr><td>Capital Expenditure</td><td>($8,000)</td><td>($15,000)</td><td>($25,000)</td></tr>
+      <tr><td>Start-Up Costs (Year 1 only)</td><td>($56,500)</td><td>—</td><td>—</td></tr>
+      <tr class="tr-total"><td><strong>Net Cash Position (End of Year)</strong></td><td><strong>$251,290</strong></td><td><strong>$2,818,124</strong></td><td><strong>$4,661,904</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>7.5.3 Projected Balance Sheet</h3>
+  <table>
+    <thead><tr><th>Balance Sheet</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td colspan="4" style="font-weight:600;color:#6e3dff;background:#f8f6ff;padding:6px 10px">Assets</td></tr>
+      <tr><td>Cash and Cash Equivalents</td><td>$251,290</td><td>$2,818,124</td><td>$4,661,904</td></tr>
+      <tr><td>Accounts Receivable</td><td>$14,000</td><td>$38,000</td><td>$95,000</td></tr>
+      <tr><td>Prepaid Expenses</td><td>$4,000</td><td>$8,000</td><td>$12,000</td></tr>
+      <tr><td>Intellectual Property / Software (net)</td><td>$35,000</td><td>$60,000</td><td>$95,000</td></tr>
+      <tr class="tr-total"><td><strong>Total Assets</strong></td><td><strong>$304,290</strong></td><td><strong>$2,924,124</strong></td><td><strong>$4,863,904</strong></td></tr>
+      <tr><td colspan="4" style="font-weight:600;color:#6e3dff;background:#f8f6ff;padding:6px 10px">Liabilities &amp; Equity</td></tr>
+      <tr><td>Accounts Payable</td><td>$4,500</td><td>$12,000</td><td>$22,000</td></tr>
+      <tr><td>Deferred Revenue (Annual Plans)</td><td>$41,830</td><td>$119,264</td><td>$269,665</td></tr>
+      <tr><td>Total Liabilities</td><td>$46,330</td><td>$131,264</td><td>$291,665</td></tr>
+      <tr><td>Founder Equity</td><td>$30,000</td><td>$30,000</td><td>$30,000</td></tr>
+      <tr><td>Investor Capital</td><td>—</td><td>$2,000,000</td><td>$2,000,000</td></tr>
+      <tr><td>Retained Earnings</td><td>$227,960</td><td>$762,860</td><td>$2,542,239</td></tr>
+      <tr class="tr-total"><td><strong>Total Liabilities &amp; Equity</strong></td><td><strong>$304,290</strong></td><td><strong>$2,924,124</strong></td><td><strong>$4,863,904</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h2>7.6 Business Ratios</h2>
+  <table>
+    <thead><tr><th>Key SaaS Metrics</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Annual Recurring Revenue (ARR)</td><td>$464,760</td><td>$1,325,160</td><td>$2,996,280</td></tr>
+      <tr><td>Monthly Recurring Revenue (MRR, Dec)</td><td>$48,000</td><td>$132,000</td><td>$300,000</td></tr>
+      <tr><td>Blended Gross Margin</td><td>85.4%</td><td>87.8%</td><td>90.2%</td></tr>
+      <tr><td>Customer Acquisition Cost (CAC)</td><td>$80</td><td>$70</td><td>$60</td></tr>
+      <tr><td>Average Revenue Per User (ARPU)</td><td>$95/mo</td><td>$105/mo</td><td>$115/mo</td></tr>
+      <tr><td>LTV (blended, 24-month)</td><td>$2,280</td><td>$2,520</td><td>$2,760</td></tr>
+      <tr><td>LTV : CAC Ratio</td><td>28.5×</td><td>36×</td><td>46×</td></tr>
+      <tr><td>Monthly Churn Rate</td><td>5.0%</td><td>3.5%</td><td>2.5%</td></tr>
+      <tr><td>Net Revenue Retention</td><td>105%</td><td>115%</td><td>125%</td></tr>
+      <tr><td>Paying Customers (End of Year)</td><td>~480</td><td>~1,350</td><td>~3,200</td></tr>
+      <tr><td>Revenue per Employee</td><td>$464,760</td><td>$442,387</td><td>$499,380</td></tr>
+      <tr class="tr-total"><td><strong>ARR Growth Rate</strong></td><td><strong>—</strong></td><td><strong>+185%</strong></td><td><strong>+126%</strong></td></tr>
+    </tbody>
+  </table>
+
+  <div class="hl" style="margin-top:20px">
+    <p>Crelix AI targets a LTV:CAC ratio above 20× in Year 1, rising to 46× by Year 3. This reflects the high gross margin of AI SaaS, improving churn performance, and declining acquisition costs as organic channels compound. These ratios indicate a structurally healthy unit economics model suited for capital-efficient scaling.</p>
+  </div>
+
+  <div class="pf"><span>Crelix AI — Confidential</span><span>crelix.ai</span><span>23</span></div>
+</div>
+
+</body>
+</html>
