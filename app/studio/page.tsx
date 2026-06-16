@@ -93,6 +93,9 @@ export default function StudioPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url: brainUrl, goal: brainGoal }),
       })
+      if (!res.ok && !res.headers.get('content-type')?.includes('application/json')) {
+        throw new Error(res.status === 504 ? 'Analysis timed out — try again' : `Request failed (${res.status})`)
+      }
       const json = await res.json()
       if (!res.ok || !json.success) throw new Error(json.error ?? 'Analysis failed')
       setBrainResult(json.data)

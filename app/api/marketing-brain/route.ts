@@ -1,6 +1,9 @@
 import { scrapeWebsite } from '@/lib/scrape'
 import { runMarketingBrain } from '@/lib/marketing-brain'
 
+// Scraping + two sequential LLM calls can exceed Vercel's default 10s timeout
+export const maxDuration = 60
+
 export async function POST(request: Request) {
   try {
     const body = await request.json()
